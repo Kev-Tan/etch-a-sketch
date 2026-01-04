@@ -5,3 +5,5 @@ Users can select up to three different color variants:
     - White
     - Warm
 The project was done in a sprint (1 hour)
+
+The website can be seen here: https://kev-tan.github.io/etch-a-sketch/
