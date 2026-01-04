@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h1>Etch-a-Sketch</h1>
-    <div class="settings">
-        <label for="boxcount">Please the desired number of squares per side of the grid</label>
-        <div>
-            <input type="number" for="boxcount" id="boxcount">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <h1>Etch-a-Sketch</h1>
+      <div class="settings">
+         <label for="boxcount">Select number of squares per side of the grid</label>
+         <div>
+            <input class="square-size" type="number" for="boxcount" id="boxcount" min="1" max="100">
             <button>Submit</button>
-        </div>
-    </div>
-    <div class="main-container">
-        
-    </div>
-
-<script src="script.js"></script>
-</body>
+         </div>
+      </div>
+      <fieldset>
+         <legend>Select a color:</legend>
+         <div>
+            <input type="radio" id="black" name="color" value="black" checked />
+            <label for="black">black</label>
+         </div>
+         <div>
+            <input type="radio" id="white" name="color" value="white" />
+            <label for="white">white</label>
+         </div>
+         <div>
+            <input type="radio" id="warm" name="color" value="warm" />
+            <label for="warm">warm</label>
+         </div>
+      </fieldset>
+      <div class="main-container">
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
